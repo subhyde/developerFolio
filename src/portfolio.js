@@ -1,7 +1,7 @@
 ﻿/* Change this file to get your personal Portfolio */
 
 // Summary And Greeting Section
-
+import React from 'react'
 import emoji from 'react-easy-emoji';
 
 const illustration = {
@@ -13,10 +13,10 @@ const greeting = {
 
   title: "Hi all, I'm Eric",
   subTitle: emoji(
-    'A passionate Business Analyst 🚀 Enrolled at Guelph University'
+    '🚀 Enrolled at Guelph University specializing in Management Economics and Finance'
   ),
   resumeLink:
-    '',
+    'https://docs.google.com/document/d/1Wuwg8l0RiWRajvaCwRYBHopejev_SA3QVNh3cRRHcI0/',
   displayGreeting: true, // Set false to hide this section, defaults to true
 };
 
@@ -33,14 +33,14 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: 'What I do',
-  subTitle: 'Business Analyst student at Guelph University',
+  subTitle: 'Management Economics and Finance student at Guelph University',
   skills: [
     emoji(
-      '⚡ Stocks'
+      '⚡ Account Case Competitions'
     ),
-    emoji('⚡ Charts'),
+    emoji('⚡ Analyzing and predicting chart trends'),
     emoji(
-      '⚡ :)'
+      '⚡ Attention to detail. A very disciplined and hard working employee'
     ),
   ],
 
@@ -48,10 +48,7 @@ const skillsSection = {
 https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
-    {
-      skillName: 'Flip Burgers',
-      fontAwesomeClassname: 'fas fa-hamburger'
-    },
+
     {
       skillName: 'Microsoft Word',
       fontAwesomeClassname: 'far fa-file-word',
@@ -79,7 +76,7 @@ const educationInfo = {
       logo: require('./assets/images/guelph.jpg'),
       subHeader: 'Business Analyst',
       duration: 'September 2019 - April 2023',
-      desc: 'PLACEHOLDER',
+      desc: '',
       descBullets: [
         '3.8 GPA'
       ],
@@ -114,13 +111,50 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
 
+
     {
-      role: 'Cook',
+      role: 'Food Server',
+      company: 'Fortinos',
+      companylogo: require('./assets/images/fortinos.png'),
+      date: '2019 - Present ',
+      desc: [
+
+         <li>Served and dealt with customers in timely fashion</li>,
+          <li>Gained excellent oral  communications skills</li>,
+        <li>Marketed new products to customers</li>,
+          <li>Managed money coming in and out </li>
+
+]
+
+    },
+    {
+      role: 'Cashier',
+      company: 'Ribfest',
+      companylogo: require('./assets/images/ribby.png'),
+      date: '2018 - 2020',
+      desc: [
+        <li>Prepared and cooked ribs for customers.</li>,
+        <li> Provided me with good work ethic for long hours/</li>,
+        <li>Dealt with thousands of dollars daily.</li>,
+        <li>Gained valuable personal communications skills.</li>]
+
+
+
+
+
+
+    },
+    {
+      role: 'Fry Cook',
       company: 'NameCamp 31',
       companylogo: require('./assets/images/camp31.png'),
       date: 'May 2019 – Oct 2020',
-      desc:
-        'flipping burgers'
+      desc: [
+        <li>Preparing food in a face-pace environment.</li>,
+        <li>Upselling to customers.</li>,
+        <li>Dealing with cash and balancing the till.</li>,
+        <li>Managed money coming in and out.</li>]
+
     },
 
   ],
@@ -293,8 +327,8 @@ const podcastSection = {
 const contactInfo = {
   title: emoji('Contact Me ☎️'),
   subtitle:
-    'Want to connect? Send me an email!',
-  emailAddress: 'eric.p.johnson8@gmail.com',
+    'Want to chat? Send me an email or connect with me on Linkedin!',
+  email_address: 'eric.p.johnson8@gmail.com',
 };
 
 // Twitter Section
